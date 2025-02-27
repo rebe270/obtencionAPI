@@ -8,7 +8,7 @@ CORS(app) ## To allow direct AJAX calls
 
 @app.route('/employee', methods=['GET'])
 def home():
-    r = requests.get('https://www.themoviedb.org/')
+    r = requests.get('https://www.jamendo.com')
 
     return r.json()
 
