@@ -8,7 +8,7 @@ CORS(app) ## To allow direct AJAX calls
 
 @app.route('/employee', methods=['GET'])
 def home():
-    r = requests.get('https://swapi.dev/api/people')
+    r = requests.get('https://api.thedogapi.com/v1/images/search?size=med&mime_types=jpg&format=json&has_breeds=true&order=RANDOM&page=0&limit=1')
 
     return r.json()
 
